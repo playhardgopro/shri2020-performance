@@ -1,8 +1,3 @@
-// $(document).ready(function () {
-//   var carousel = $('#carousel');
-
-//   carousel.owlCarousel();
-// });
 
 // FIXME: warning!
 document.addEventListener(
