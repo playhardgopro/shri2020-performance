@@ -5,7 +5,7 @@
 
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
-	content: ".";
+	content: "";
 	display: block;
 	clear: both;
 	visibility: hidden;
@@ -55,7 +55,7 @@
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(grabbing.png) 8 8, move;
+    /* cursor:url(grabbing.png) 8 8, move; */
 }
 
 /* fix */

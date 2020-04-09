@@ -1,8 +1,8 @@
-$(document).ready(function () {
-  var carousel = $('#carousel');
+// $(document).ready(function () {
+//   var carousel = $('#carousel');
 
-  carousel.owlCarousel();
-});
+//   carousel.owlCarousel();
+// });
 
 // FIXME: warning!
 document.addEventListener(

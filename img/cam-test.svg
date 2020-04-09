@@ -1,0 +1,61 @@
+<svg width="47" height="36" xmlns="http://www.w3.org/2000/svg">
+ <title>cam-white</title>
+
+ <desc>Created with Sketch.</desc>
+ <!-- Code injected by live-server -->//
+ <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="38" width="49" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Events">
+   <g id="Assets">
+    <rect y="-253" x="-171" height="1210" width="748" id="Rectangle"/>
+    <g id="Icon">
+     <circle fill-opacity="0" fill="#D8D8D8" r="26" cy="18" cx="24" id="Oval"/>
+     <g fill-rule="nonzero" fill="#FFF" id="002-cctv">
+      <path d="m24,25.999969c3.308594,0 6,-2.691376 6,-6c0,-3.308624 -2.691406,-6 -6,-6c-3.308594,0 -6,2.691376 -6,6c0,3.308624 2.691406,6 6,6zm0,-9.999939c2.206055,0 4,1.793915 4,4.000031c0,2.206131 -1.793945,3.999939 -4,3.999939c-2.206055,0 -4,-1.793915 -4,-4.000031c0,-2.206131 1.793945,-3.999939 4,-3.999939z" id="Shape"/>
+      <path d="m23,21c0.552734,0 1,-0.447281 1,-1.000031c0.552734,0 1,-0.447281 1,-1.000031c0,-0.55275 -0.447266,-1.000031 -1,-1.000031c-1.102478,0 -2,0.897476 -2,1.999969c0,0.552841 0.447327,1.000122 1,1.000122z" id="Shape"/>
+      <path d="m47,0l-46,0c-0.552734,0 -1,0.447281 -1,1.000031l0,7.000031c0,2.206024 1.793884,3.999939 4,3.999939l0,4.000031c0,11.028275 8.971741,19.999969 20,19.999969c11.028259,0 20,-8.971695 20,-19.999969l0,-4.000031c2.206116,0 4,-1.793915 4,-4.000031l0,-6.999939c0,-0.55275 -0.447266,-1.000031 -1,-1.000031zm-5,16.000031c0,9.92485 -8.075134,18 -18,18c-9.924866,0 -18,-8.07515 -18,-18l0,-4.000031l12.06189,0c-2.450439,1.824463 -4.06189,4.717407 -4.06189,7.999969c0,5.513718 4.486389,10.000031 10,10.000031c5.513611,0 10,-4.486313 10,-10.000031c0,-3.282562 -1.61145,-6.175507 -4.06189,-7.999969l12.06189,0l0,4.000031zm-18,-4.000031c4.411133,0 8,3.588837 8,7.999969c0,4.411118 -3.588867,7.999969 -8,7.999969c-4.411133,0 -8,-3.588852 -8,-7.999969c0,-4.411133 3.588867,-7.999969 8,-7.999969zm22,-4.000031c0,1.102509 -0.897461,1.999969 -1.999939,1.999969l-40.000061,0c-1.102478,0 -1.999939,-0.897461 -1.999939,-1.999969l0,-6l43.999939,0l0,6z" id="Shape"/>
+      <circle r="1" cy="15" cx="37" id="Oval"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g></svg>
