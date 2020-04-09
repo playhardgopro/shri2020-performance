@@ -424,9 +424,12 @@ footer {
 .card {
   background: url('../img/cbg.jpg');
   color: #333;
-  border-radius: 20px;
+  border-radius: 23px;
   box-sizing: border-box;
   padding: 0 20px 20px 20px;
+}
+.card.card_size_s {
+  border-radius: 22px;
 }
 
 .critical {
