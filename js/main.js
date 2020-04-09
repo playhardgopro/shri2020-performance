@@ -24673,38 +24673,6 @@ selectOptions.forEach(o => {
     })
 });
 
-
-
-// var storage, initCriticalCam = function () {
-//     var u, m, p, v, h, y = new Array, g = document.querySelector(".critical-cam"), f = 0, S = 100, q = 100;
-//     g.style.backgroundPosition = "0px 0px", g.style.backgroundSize = "100%", g.style.filter = "brightness(100%)";
-//     var x = function (e, t) {
-//         return t < e ? e - t : t - e
-//     }, t = function (e) {
-//         for (var t = 0; t < y.length; t++) if (e.pointerId == y[t].pointerId) {
-//             y[t] = e;
-//             break
-//         }
-//         if (1 == y.length && (g.style.backgroundPosition = p + e.clientX - m + "px " + (v + e.clientY - u) + "px"), 2 == y.length) {
-//             var n = (r = y[0].clientX, i = y[0].clientY, c = y[1].clientX, a = y[1].clientY, l = x(r, c), s = x(i, a), d = Math.sqrt(Math.pow(l, 2) + Math.pow(s, 2)), d);
-//             f < n ? q += 1 : q -= 1, g.style.backgroundSize = q + "%", f = n, zoomText.textContent = q;
-//             var o = Math.atan2(y[1].clientY - y[0].clientY, y[1].clientX - y[0].clientX) * (180 / Math.PI);
-//             h < o ? S += 2 : S -= 2, g.style.filter = "brightness(" + S + "%)", h = o, brightText.textContent = S
-//         }
-//         var r, i, c, a, l, s, d
-//     }, e = function (e) {
-//         g.removeEventListener("pointermove", t), n(e)
-//     }, n = function (e) {
-//         for (var t = 0; t < y.length; t++) if (y[t].pointerId == e.pointerId) {
-//             y.splice(t, 1);
-//             break
-//         }
-//     };
-//     g.addEventListener("pointerdown", function (e) {
-//         y.push(e), m = e.clientX, u = e.clientY, p = parseInt(g.style.backgroundPositionX, 10), v = parseInt(g.style.backgroundPositionY, 10), 2 == y.length && (h = Math.atan2(y[1].clientY - y[0].clientY, y[1].clientX - y[0].clientX) * (180 / Math.PI)), g.addEventListener("pointermove", t)
-//     }), document.addEventListener("pointerup", e), g.addEventListener("onpointerup", e)
-// };
-
 $(document).ready(function(){
 
     var carousel = $("#carousel");
