@@ -1,88 +1,70 @@
-em,
-menu,
-h4,
-p {
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: baseline
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
 }
 
 @font-face {
   font-family: OpenSansReg;
-  src: url('../assets/OpenSans-Regular.ttf');
+  src: url("../assets/OpenSans-Regular.ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: OpenSansLight;
-  src: url('../assets/OpenSans-Light.ttf');
+  src: url("../assets/OpenSans-Light.ttf");
 }
 
 body {
-  line-height: 1;
+  line-height: 1
 }
 
-ol,
-ul {
-  list-style: none;
+ol, ul {
+  list-style: none
 }
 
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+  quotes: none
 }
 
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
+blockquote:after, blockquote:before, q:after, q:before {
   content: '';
-  content: none;
+  content: none
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0
 }
 
-input[type='range'] {
-  -webkit-appearance: none;
+input[type=range] {
+  -webkit-appearance: none
 }
 
-input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none
 }
 
-input[type='range']:focus {
-  outline: 0;
+input[type=range]:focus {
+  outline: 0
 }
 
-input[type='range']::-ms-track {
+input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
   background: 0 0;
   border-color: transparent;
-  color: transparent;
+  color: transparent
 }
 
-input[type='range'].song-range::-webkit-slider-thumb {
+input[type=range].song-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 20px;
@@ -91,10 +73,10 @@ input[type='range'].song-range::-webkit-slider-thumb {
   background: #d8d8d8;
   cursor: pointer;
   margin-top: -8px;
-  box-shadow: none;
+  box-shadow: none
 }
 
-input[type='range'].volume-range::-webkit-slider-thumb {
+input[type=range].volume-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 16px;
@@ -103,10 +85,10 @@ input[type='range'].volume-range::-webkit-slider-thumb {
   background: #605757;
   cursor: pointer;
   margin-top: -6px;
-  box-shadow: none;
+  box-shadow: none
 }
 
-input[type='range'].song-range::-moz-range-thumb {
+input[type=range].song-range::-moz-range-thumb {
   -webkit-appearance: none;
   border: none;
   height: 20px;
@@ -114,10 +96,10 @@ input[type='range'].song-range::-moz-range-thumb {
   border-radius: 4.5px;
   background: #d8d8d8;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: none
 }
 
-input[type='range'].volume-range::-moz-range-thumb {
+input[type=range].volume-range::-moz-range-thumb {
   -webkit-appearance: none;
   border: none;
   height: 16px;
@@ -125,10 +107,10 @@ input[type='range'].volume-range::-moz-range-thumb {
   border-radius: 26px;
   background: #605757;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: none
 }
 
-input[type='range'].song-range::-ms-thumb {
+input[type=range].song-range::-ms-thumb {
   -webkit-appearance: none;
   border: none;
   height: 20px;
@@ -136,10 +118,10 @@ input[type='range'].song-range::-ms-thumb {
   border-radius: 4.5px;
   background: #d8d8d8;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: none
 }
 
-input[type='range'].volume-range::-ms-thumb {
+input[type=range].volume-range::-ms-thumb {
   -webkit-appearance: none;
   border: none;
   height: 16px;
@@ -147,106 +129,105 @@ input[type='range'].volume-range::-ms-thumb {
   border-radius: 26px;
   background: #605757;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: none
 }
 
-input[type='range'].song-range::-webkit-slider-runnable-track {
+input[type=range].song-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 1px;
   cursor: pointer;
   box-shadow: none;
   background: #979797;
   border-radius: none;
-  border: none;
+  border: none
 }
 
-input[type='range'].volume-range::-webkit-slider-runnable-track {
+input[type=range].volume-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 4px;
   cursor: pointer;
   box-shadow: none;
-  background: rgba(216, 216, 216, 0.3);
+  background: rgba(216, 216, 216, .3);
   border-radius: 2px;
-  border: none;
+  border: none
 }
 
-input[type='range'].song-range:focus::-webkit-slider-runnable-track {
-  background: #979797;
+input[type=range].song-range:focus::-webkit-slider-runnable-track {
+  background: #979797
 }
 
-input[type='range'].volume-range:focus::-webkit-slider-runnable-track {
-  background: rgba(216, 216, 216, 0.3);
+input[type=range].volume-range:focus::-webkit-slider-runnable-track {
+  background: rgba(216, 216, 216, .3)
 }
 
-input[type='range'].song-range::-moz-range-track {
+input[type=range].song-range::-moz-range-track {
   width: 100%;
   height: 1px;
   cursor: pointer;
   box-shadow: none;
   background: #979797;
   border-radius: none;
-  border: none;
+  border: none
 }
 
-input[type='range'].volume-range::-moz-range-track {
+input[type=range].volume-range::-moz-range-track {
   width: 100%;
   height: 4px;
   cursor: pointer;
   box-shadow: none;
-  background: rgba(216, 216, 216, 0.3);
+  background: rgba(216, 216, 216, .3);
   border-radius: 2px;
-  border: none;
+  border: none
 }
 
-input[type='range'].song-range::-ms-track {
+input[type=range].song-range::-ms-track {
   width: 100%;
   height: 1px;
   cursor: pointer;
   box-shadow: none;
   background: #979797;
   border-radius: none;
-  border: none;
+  border: none
 }
 
-input[type='range'].volume-range::-ms-track {
+input[type=range].volume-range::-ms-track {
   width: 100%;
   height: 4px;
   cursor: pointer;
   box-shadow: none;
-  background: rgba(216, 216, 216, 0.3);
+  background: rgba(216, 216, 216, .3);
   border-radius: 2px;
-  border: none;
+  border: none
 }
 
-input[type='range']::-ms-fill-lower {
+input[type=range]::-ms-fill-lower {
   background: #2a6495;
-  border: 0.2px solid #010101;
+  border: .2px solid #010101;
   border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d
 }
 
-input[type='range']:focus::-ms-fill-lower {
-  background: #3071a9;
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9
 }
 
-input[type='range']::-ms-fill-upper {
+input[type=range]::-ms-fill-upper {
   background: #3071a9;
-  border: 0.2px solid #010101;
+  border: .2px solid #010101;
   border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d
 }
 
-input[type='range']:focus::-ms-fill-upper {
-  background: #367ebd;
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd
 }
 
-body,
-html {
+body, html {
   font-family: Arial;
   padding: 0;
   margin: 0;
   height: 100%;
-  width: 100%;
+  width: 100%
 }
 
 .content-block {
@@ -256,27 +237,27 @@ html {
   grid-template-columns: repeat(auto-fit, 154px);
   grid-auto-flow: dense;
   grid-gap: 20px;
-  justify-content: center;
+  justify-content: center
 }
 
 .switch-block {
-  display: none;
+  display: none
 }
 
 .switch-block_active {
-  display: block;
+  display: block
 }
 
 .header-logo {
   width: 108px;
   float: left;
-  margin: 32px 21px 0 0;
+  margin: 32px 21px 0 0
 }
 
 .header-menu {
   float: left;
   margin: 38px 0 0 0;
-  padding: 0;
+  padding: 0
 }
 
 .header-menu__link {
@@ -285,18 +266,18 @@ html {
   font-size: 16px;
   font-weight: 700;
   color: #333;
-  opacity: 0.6;
+  opacity: .6;
   list-style: none;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .header-menu__switcher {
-  display: none;
+  display: none
 }
 
 .header-menu__link_active {
-  opacity: 1;
+  opacity: 1
 }
 
 footer {
@@ -304,14 +285,14 @@ footer {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
-  padding: 40px 40px 0 40px;
+  padding: 40px 40px 0 40px
 }
 
 .footer-menu__link {
   margin-right: 12px;
   font-size: 12px;
   color: #858585;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .content-heading {
@@ -327,42 +308,42 @@ footer {
 
 .card_size_s {
   grid-column: span 2;
-  grid-row: span 1;
+  grid-row: span 1
 }
 
 .card_size_m {
   grid-column: span 3;
-  grid-row: span 1;
+  grid-row: span 1
 }
 
 .card_size_l {
   grid-column: span 4;
-  grid-row: span 3;
+  grid-row: span 3
 }
 
 .card_size_c {
   grid-column: span 3;
-  grid-row: span 2;
+  grid-row: span 2
 }
 
 .card {
-  background: url('../img/cbg.jpg');
+  background: url("../img/cbg.jpg");
   color: #333;
   border-radius: 20px;
   box-sizing: border-box;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px 20px
 }
 
 .critical {
   color: #fff;
-  padding: 0;
+  padding: 0
 }
 .logo {
   display: inline-block;
   width: 108px;
   height: 27px;
   position: relative;
-  background-image: url('./assets/logo.png');
+  background-image: url("./assets/logo.png");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -393,7 +374,7 @@ footer {
   padding: 0 20px 0 25px;
   display: flex;
   justify-content: space-between;
-  background: url('assets/sh.png') center center/cover no-repeat;
+  background: url("assets/sh.png") center center/cover no-repeat;
 }
 .main__greeting {
   margin-top: 6px;
@@ -404,7 +385,7 @@ footer {
   width: 61.585%;
   padding-top: 20px;
   padding-left: 20px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255,255,255,0.6);
 }
 .main__panel {
   margin-bottom: 14px;
@@ -482,14 +463,12 @@ footer {
   padding-right: 32px;
 }
 .modal__value_temp {
-  background: url('assets/panel__icon_temp_on.svg') calc(100% + 10px) 0% /
-    contain no-repeat;
+  background: url("assets/panel__icon_temp_on.svg") calc(100% + 10px) 0%/contain no-repeat;
 }
 .modal__value_light {
   height: 45px;
   padding-right: 45px;
-  background: url('assets/panel__icon_light_off.svg') right center/contain
-    no-repeat;
+  background: url("assets/panel__icon_light_off.svg") right center/contain no-repeat;
 }
 .modal__status {
   margin-bottom: 20px;
@@ -520,9 +499,9 @@ footer {
 }
 @keyframes modal {
   from {
-    transform: scale(0.2);
+      transform: scale(0.2);
   }
-  to-transform: scale(1);
+to-transform: scale(1);
 }
 * {
   box-sizing: border-box;
@@ -647,13 +626,13 @@ html {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  font-family: 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .weather__item_outside {
   padding-right: 31px;
 }
 .weather__item_cloud-drizzle {
-  background: url('assets/cloud-drizzle.png') 100% 70%/26px no-repeat;
+  background: url("assets/cloud-drizzle.png") 100% 70%/26px no-repeat;
 }
 .stats {
   opacity: 0;
@@ -663,35 +642,30 @@ html {
   height: 24px;
 }
 .panel__icon_temp_off {
-  background: url('assets/panel__icon_temp_off.svg') center center/contain
-    no-repeat;
+  background: url("assets/panel__icon_temp_off.svg") center center/contain no-repeat;
 }
 .panel__icon_temp_on {
-  background: url('assets/panel__icon_temp_on.svg') center center/contain
-    no-repeat;
+  background: url("assets/panel__icon_temp_on.svg") center center/contain no-repeat;
 }
 .panel__icon_light_off {
-  background: url('assets/panel__icon_light_off.svg') center center/contain
-    no-repeat;
+  background: url("assets/panel__icon_light_off.svg") center center/contain no-repeat;
 }
 .panel__icon_light_on {
-  background: url('assets/panel__icon_light_on.svg') center center/contain
-    no-repeat;
+  background: url("assets/panel__icon_light_on.svg") center center/contain no-repeat;
 }
 .panel__icon_clock {
-  background: url('assets/panel__icon_clock.svg') center center/contain
-    no-repeat;
+  background: url("assets/panel__icon_clock.svg") center center/contain no-repeat;
 }
 
 .card-heading {
   display: flex;
   align-items: center;
   padding: 0 4px;
-  height: 92px;
+  height: 92px
 }
 
 .card-icon-wrap {
-  width: 47px;
+  width: 47px
 }
 
 .card-title {
@@ -707,22 +681,22 @@ html {
   width: 100%;
   line-height: 40px;
   margin-top: -14px;
-  margin-bottom: -8px;
+  margin-bottom: -8px
 }
 
 .card-source {
   display: inline-block;
-  font-size: 18px;
+  font-size: 18px
 }
 
 .card-time {
   display: block;
   font-size: 18px;
-  float: right;
+  float: right
 }
 
 .card-time_block {
-  float: none;
+  float: none
 }
 
 .card-description {
@@ -731,13 +705,13 @@ html {
   -webkit-columns: #000;
   columns: #000;
   padding-top: 23px;
-  margin-bottom: 9px;
+  margin-bottom: 9px
 }
 
 .card-description_big {
   font-size: 24px;
   padding: 24px 50px 0 0;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .description_critical {
@@ -747,20 +721,20 @@ html {
   margin-top: -20px;
   box-sizing: border-box;
   padding: 23px 20px;
-  touch-action: none;
+  touch-action: none
 }
 
 .heading-critical {
   background: rgba(219, 83, 65, 1);
   box-sizing: border-box;
   padding: 0 20px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0
 }
 
 .specs-critical {
   background: rgba(219, 83, 65, 1);
   box-sizing: border-box;
-  padding: 0 20px 28px 20px;
+  padding: 0 20px 28px 20px
 }
 
 .critical-cam {
@@ -770,8 +744,8 @@ html {
   display: block;
   background: url(../img/cam2.jpg);
   border-radius: 20px;
-  background-size: cover;
-  background-position: 0 0;
+  /* background-size: cover;
+  background-position: 0 0; */
   touch-action: none;
   background-position: 0px 0px;
   background-size: 100%;
@@ -782,111 +756,111 @@ html {
   border-radius: 20px;
   width: 100%;
   overflow: hidden;
-  padding-top: 90px;
+  padding-top: 90px
 }
 
 .card-data_graph-img {
   width: 100%;
-  margin-bottom: -4px;
+  margin-bottom: -4px
 }
 
 .card-data_climat {
   font-size: 18px;
   padding-top: 19px;
-  margin-bottom: -10px;
+  margin-bottom: -10px
 }
 
 .climat-block {
   display: inline-block;
   padding-right: 48px;
-  padding-bottom: 11px;
+  padding-bottom: 11px
 }
 
 .climat-block_data {
-  font-weight: 700;
+  font-weight: 700
 }
 
 .song-area {
   display: block;
   height: 53px;
-  margin-top: 29px;
+  margin-top: 29px
 }
 
 .cover-wrap {
   float: left;
   width: 53px;
   height: 53px;
-  margin-left: 2px;
+  margin-left: 2px
 }
 
 .cover {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 8px
 }
 
 .song-data {
   float: left;
   padding-left: 15px;
-  margin-right: -20px;
+  margin-right: -20px
 }
 
 .song-title {
   font-size: 20px;
   color: #000;
   padding-top: 2px;
-  padding-bottom: 18px;
+  padding-bottom: 18px
 }
 
 .song-range {
   width: 350px;
-  float: left;
+  float: left
 }
 
 .song-length {
   float: left;
   font-size: 14px;
-  color: rgba(161, 161, 161, 0.84);
+  color: rgba(161, 161, 161, .84);
   margin-top: -6px;
-  margin-left: 12px;
+  margin-left: 12px
 }
 
 .volume-range {
   background: 0 0;
   width: 267px;
-  margin-left: 10px;
+  margin-left: 10px
 }
 
 .player-controls {
   display: flex;
   padding-top: 17px;
-  margin: 0 -20px -6px -20px;
+  margin: 0 -20px -6px -20px
 }
 
 .player-control {
   outline: 0;
   cursor: pointer;
   background: 0 0;
-  border: none;
+  border: none
 }
 
 .player-control_next {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-left: 15px;
-  margin-top: -3px;
+  margin-top: -3px
 }
 
 .song-volume {
   display: inline-block;
   font-size: 14px;
-  color: rgba(161, 161, 161, 0.84);
+  color: rgba(161, 161, 161, .84);
   margin-top: 21px;
-  margin-left: 12px;
+  margin-left: 12px
 }
 
 .buttons-wrap {
   display: block;
-  padding-top: 30px;
+  padding-top: 30px
 }
 
 .button {
@@ -898,20 +872,20 @@ html {
   background: #e5e5e5;
   font-size: 20px;
   font-weight: 700;
-  margin-right: 18px;
+  margin-right: 18px
 }
 
 .button_yellow {
-  background: rgba(255, 217, 62, 1);
+  background: rgba(255, 217, 62, 1)
 }
 
 html {
-  overflow: scroll;
+  overflow: scroll
 }
 
 .video-wrapper {
   min-height: 300px;
-  position: relative;
+  position: relative
 }
 
 .video {
@@ -920,22 +894,22 @@ html {
   top: 0;
   width: 100%;
   height: 300px;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
   z-index: 1;
   -webkit-filter: brightness(100%) contrast(100%);
-  filter: brightness(100%) contrast(100%);
+  filter: brightness(100%) contrast(100%)
 }
 
 .video_active {
   z-index: 10;
-  background: #000;
+  background: #000
 }
 
 .video-controls-wrap {
   box-sizing: border-box;
   padding: 40px;
   display: block;
-  width: 100%;
+  width: 100%
 }
 
 .video-controls {
@@ -944,22 +918,22 @@ html {
   left: 0;
   width: 100%;
   height: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, .9);
   z-index: 20;
   overflow: hidden;
-  transition: height 0.5s ease;
+  transition: height .5s ease
 }
 
 .video-controls_active {
-  height: 92px;
+  height: 92px
 }
 
 .controls-text {
-  float: left;
+  float: left
 }
 
 .video-control {
-  float: left;
+  float: left
 }
 
 .video-volume {
@@ -968,13 +942,13 @@ html {
   height: 40px;
   width: 40px;
   margin-left: 40px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .video-volume_unmuted {
   background: green;
   background: url(../img/sound.png);
-  background-size: cover;
+  background-size: cover
 }
 
 .analyser {
@@ -985,7 +959,7 @@ html {
   bottom: 40px;
   right: 0;
   background: green;
-  transition: height 0.5s ease;
+  transition: height .5s ease
 }
 
 .analyser_active {
@@ -993,253 +967,254 @@ html {
   z-index: 15;
   bottom: 40px;
   right: 40px;
-  width: 60px;
+  width: 60px
 }
 
 @media (max-width: 1230px) {
   .card_size_m {
-    grid-column: span 4;
+      grid-column: span 4
   }
 }
 
 @media (max-width: 1030px) {
   .content {
-    width: 75%;
+      width: 75%
   }
 
   .card_size_m {
-    grid-column: span 4;
+      grid-column: span 4
   }
 
   .content-heading {
-    width: 668px;
+      width: 668px
   }
 }
 
 @media (min-width: 1371px) {
   .content-heading {
-    text-align: center;
-    font-size: 40px;
+      text-align: center;
+      font-size: 40px
   }
 }
 
 @media (max-width: 680px) {
   .content {
-    width: 335px;
-    grid-template-columns: repeat(6, 1fr);
+      width: 335px;
+      grid-template-columns: repeat(6, 1fr)
   }
 
   .content-heading {
-    font-size: 24px;
-    height: 64px;
-    line-height: 64px;
-    width: 330px;
+      font-size: 24px;
+      height: 64px;
+      line-height: 64px;
+      width: 330px
   }
 
   header {
-    height: 67px;
-    padding: 0 20px;
-    border-bottom: 0;
+      height: 67px;
+      padding: 0 20px;
+      border-bottom: 0
   }
 
   .header-logo {
-    margin: 21px 52px 0 0;
+      margin: 21px 52px 0 0
   }
 
   .header-menu {
-    display: block;
-    position: absolute;
-    background: #fff;
-    top: -45px;
-    padding-top: 14px;
-    left: 0;
-    padding-left: 20px;
-    z-index: 2;
-    width: 0;
-    overflow: hidden;
-    transition: all 0.5s ease;
+      display: block;
+      position: absolute;
+      background: #fff;
+      top: -45px;
+      padding-top: 14px;
+      left: 0;
+      padding-left: 20px;
+      z-index: 2;
+      width: 0;
+      overflow: hidden;
+      transition: all .5s ease
   }
 
   .header-menu_active {
-    width: 250px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      width: 250px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3)
   }
 
   .header-menu__link {
-    padding: 20px 20px 20px 0;
-    width: 100%;
+      padding: 20px 20px 20px 0;
+      width: 100%
   }
 
   .header-menu__switcher {
-    float: right;
-    margin-top: 27px;
-    cursor: pointer;
-    display: block;
+      float: right;
+      margin-top: 27px;
+      cursor: pointer;
+      display: block
   }
 
   .card {
-    overflow: hidden;
-    padding: 0 17px 20px 17px;
+      overflow: hidden;
+      padding: 0 17px 20px 17px
   }
 
   .card_size_l {
-    grid-column: span 6;
+      grid-column: span 6
   }
 
   .card_size_m {
-    grid-column: span 6;
+      grid-column: span 6
   }
 
   .card_size_s {
-    grid-column: span 6;
+      grid-column: span 6
   }
 
   .card-icon-wrap {
-    width: 35px;
+      width: 35px
   }
 
   .card-icon {
-    width: 35px;
+      width: 35px
   }
 
   .card-title {
-    font-size: 14px;
-    padding-left: 16px;
-    line-height: 16px;
+      font-size: 14px;
+      padding-left: 16px;
+      line-height: 16px
   }
 
   .card-heading {
-    padding: 0;
-    height: 60px;
+      padding: 0;
+      height: 60px
   }
 
   .card-source {
-    font-size: 12px;
+      font-size: 12px
   }
 
   .card-time {
-    font-size: 12px;
+      font-size: 12px
   }
 
   .card-description {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 14px 0 0 0;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 14px 0 0 0
   }
 
   .card-description_big {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 14px 0 0 0;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 14px 0 0 0
   }
 
   .card-data_graph {
-    padding-top: 39px;
+      padding-top: 39px
   }
 
   .card-time_block {
-    float: right;
+      float: right
   }
 
   .card-specs {
-    margin-bottom: -9px;
+      margin-bottom: -9px
   }
 
   .card-data_climat {
-    font-size: 14px;
-    padding-top: 14px;
-    margin-bottom: -17px;
+      font-size: 14px;
+      padding-top: 14px;
+      margin-bottom: -17px
   }
 
   .hum-block {
-    padding-right: 0;
-    float: right;
+      padding-right: 0;
+      float: right
   }
 
   .critical {
-    padding: 0;
+      padding: 0
   }
 
   .heading-critical {
-    padding: 0 17px;
-    height: 69px;
+      padding: 0 17px;
+      height: 69px
   }
 
   .specs-critical {
-    padding: 0 17px 23px 17px;
+      padding: 0 17px 23px 17px
   }
 
   .description_critical {
-    font-size: 18px;
-    padding: 16px 17px;
+      font-size: 18px;
+      padding: 16px 17px
   }
 
   .song-area {
-    margin-top: 13px;
+      margin-top: 13px
   }
 
   .cover-wrap {
-    margin-left: 0;
+      margin-left: 0
   }
 
   .song-title {
-    width: 234px;
-    font-size: 18px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+      width: 234px;
+      font-size: 18px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden
   }
 
   .song-data {
-    padding-left: 15px;
+      padding-left: 15px
   }
 
   .song-range {
-    width: 192px;
+      width: 192px
   }
 
   .player-controls {
-    margin: 0 -20px -10px -8px;
+      margin: 0 -20px -10px -8px
   }
 
   .player-control_next {
-    margin-left: 8px;
-    margin-top: -10px;
+      margin-left: 8px;
+      margin-top: -10px
   }
 
   .volume-range {
-    width: 117px;
+      width: 117px
   }
 
   .buttons-wrap {
-    padding-top: 14px;
+      padding-top: 14px
   }
 
   .button {
-    height: 44px;
-    float: right;
-    margin-right: 0;
+      height: 44px;
+      float: right;
+      margin-right: 0
   }
 
   .button_yellow {
-    float: left;
+      float: left
   }
 
-  /* .critical-cam {
-        height: 177px
-    } */
+  .critical-cam {
+      height: 177px
+  }
 
   .footer-menu {
-    padding-left: 20px;
+      padding-left: 20px
   }
 
   .card-video {
-    overflow: visible;
+      overflow: visible
   }
 
   .video-control {
-    margin-right: 100px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+      margin-right: 100px;
+      margin-bottom: 10px;
+      margin-top: 10px
   }
 }
+
