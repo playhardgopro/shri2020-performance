@@ -19,6 +19,7 @@
                                              888
                                             o888o
      ###################################################################### -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
   <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
@@ -97,12 +98,13 @@
         <p class="card-time"></p>
       </div>
     </div>
+    <img class="critical-cam__img" src="img/cam2.jpg" >
+
 
   </template><template class="template-description">
     <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое
       местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
-      <div class="critical-cam">
-
+      <div class="critical-cam lazy" data-bg="../img/cam2.jpg">
       </div>
 
     </p>
@@ -440,8 +442,7 @@
           </div>
           <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое
             местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
-            <div class="critical-cam">
-
+            <div class="critical-cam lazy" data-bg="../img/cam2.jpg">
             </div>
 
           </p>
@@ -478,6 +479,12 @@
       <a class="footer-menu__link" href="./assets/license.pdf" target="blank">Лицензия</a>
     </menu>
   </footer>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+});
+lazyLoadInstance.update();
+  </script>
 </body>
 
 </html>
