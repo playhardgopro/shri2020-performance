@@ -418,13 +418,25 @@
             строю!</p>
         </div>
 
-
+<!-- //FIXME: fix styles -->
         <div class="card card_size_l critical">
           <div class="card-heading heading-critical">
             <div class="card-icon-wrap">
-              <div id="carousel">
-                <div class="carousel-element">
-                  <img class="card-icon" src="img/cam-test.svg">
+              <div id="carousel" style="/*! opacity: 1; */ display: block;" class="owl-carousel owl-theme">
+                <div class="owl-wrapper-outer">
+                  <div class="owl-wrapper"
+                    style="width: 32px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+                    <div class="owl-item" style="width: 16px;">
+                      <div class="carousel-element">
+                        <img class="card-icon" src="img/cam.svg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-controls clickable" style="display: none;">
+                  <div class="owl-pagination">
+                    <div class="owl-page"><span class=""></span></div>
+                  </div>
                 </div>
               </div>
             </div>

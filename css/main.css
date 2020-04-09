@@ -688,7 +688,8 @@ html {
   font-weight: 700;
   margin-bottom: 4px;
 }
-.scenarios {
+//FIXME: delete
+/* .scenarios {
   max-height: 331px;
   background: #fff;
   display: flex;
@@ -711,7 +712,7 @@ html {
 }
 .scenarios_hide {
   display: none;
-}
+} */
 .weather {
   display: flex;
 }
